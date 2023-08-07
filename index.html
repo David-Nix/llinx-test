@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Vite App</title>
+  <script type="module" crossorigin src="/assets/index-cf108557.js"></script>
+  <link rel="stylesheet" href="/assets/index-73211590.css">
+</head>
+
+<body>
+  <div id="preloader_container">
+    <div class="loader-grounds flex-c">
+      <div class="ground flex">
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+      </div>
+      <div class="ground flex">
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+        <div class="stag"></div>
+      </div>
+    </div>
+
+    <div class="loader-text flex-c">
+      <div>
+        <h2 class="logo">llinx.io</h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="container">
+    <div id="header" class="flex-j">
+      <h2 class="logo">llinx.</h2>
+      <div id="theme" class="flex-c">
+        <i class="fas fa-sun"></i>
+      </div>
+    </div>
+
+    <div id="main">
+      <div id="hero" class="page flex">
+        <div class="cuner">
+          <h2 class="title">Shrink the world.</h2>
+        </div>
+        <div class="cuner">
+          <p class="desc">One link at a time.</p>
+        </div>
+        <button class="button nav-link" data-nav="shorten">
+          shorten your link
+        </button>
+      </div>
+      <div id="shorten" class="page shorten-page flex hide">
+        <div class="cuner">
+          <h4 class="title">Paste your link below.</h4>
+        </div>
+        <div class="cuner">
+          <p class="desc big">A short link will be<br />made in a sec.</p>
+        </div>
+        <div class="shorten-before flex">
+          <span class="clip first"></span>
+          <span class="clip second"></span>
+          <input id="input-before" class="input before" type="text" placeholder="paste your link..." />
+          <button class="shorten">Paste</button>
+          <span class="clip third"></span>
+          <span class="clip fourth"></span>
+        </div>
+        <div class="shorten-after flex hide">
+          <span class="clip first"></span>
+          <span class="clip second"></span>
+          <input id="input-after" class="input after" type="text" value="https://awesome.me/5fj6K9" disabled />
+          <button class="shorten">Copy</button>
+          <span class="clip third"></span>
+          <span class="clip fourth"></span>
+        </div>
+      </div>
+      <div id="analytics" class="page analytics flex hide">
+        <div class="cuner">
+          <h4 class="title">Analytics.</h4>
+        </div>
+        <div class="cuner">
+          <p class="desc big">See cool stats of your<br />shortened link:</p>
+        </div>
+        <div class="flex">
+          <span class="clip first"></span>
+          <span class="clip second"></span>
+          <div class="analysis flex-j">
+            <div class="readings flex">
+              <div class="read flex-j">
+                <span class="read_title">Clicks (excluding your IP):</span>
+                <span class="read_desc">67</span>
+              </div>
+              <div class="read flex-j">
+                <span class="read_title">Mobile:</span>
+                <span class="read_desc">45</span>
+              </div>
+              <div class="read flex-j">
+                <span class="read_title">Desktop / Laptop:</span>
+                <span class="read_desc">22</span>
+              </div>
+            </div>
+            <button class="expand">Expand</button>
+          </div>
+          <span class="clip third"></span>
+          <span class="clip fourth"></span>
+        </div>
+      </div>
+      <div id="api" class="page flex hide">
+        <div class="cuner">
+          <h2 class="title">API.</h2>
+        </div>
+        <div class="cuner">
+          <p class="desc">Coming Soon.</p>
+        </div>
+      </div>
+      <div id="access" class="page flex hide">
+        <div class="cuner">
+          <h2 class="title">Access.</h2>
+        </div>
+        <div class="cuner">
+          <p class="desc">Please sign up / sign in below.</p>
+        </div>
+        <div class="flex">
+          <span class="clip first"></span>
+          <span class="clip second"></span>
+          <form action="http://localhost:3000/access" method="post" id="form" class="flex-c">
+            <input id="iform_name_email" class="input" name="name_email" type="text"
+              placeholder="Username / Email Address..." />
+            <input id="form_password" class="input" name="password" type="password" placeholder="Password..." />
+            <button type="submit" id="form_access" class="shorten">Access</button>
+          </form>
+          <span class="clip third"></span>
+          <span class="clip fourth"></span>
+        </div>
+        <div class="cuner">
+          <p class="desc" style="margin-top: 2rem;">(If you don't have an account, one will be created
+            for you.)</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal" class="flex-c">
+      <div id="modal-content">
+        <p class="desc">Nothing to see here</p>
+      </div>
+    </div>
+
+    <div class="nav flex-c">
+      <div class="nav-inner flex-j">
+        <button class="nav-link flex-c" type="submit" data-nav="access">
+          <i class="fa-solid fa-plug"></i><span class="title">Access</span>
+        </button>
+        <button class="nav-link flex-c" type="submit" data-nav="hero">
+          <i class="fa-solid fa-link"></i><span class="title">Shorten Link</span>
+        </button>
+        <button class="nav-link flex-c" type="submit" data-nav="analytics">
+          <i class="fa-solid fa-chart-simple"></i><span class="title">Analytics</span>
+        </button>
+        <button class="nav-link flex-c" type="submit" data-nav="api">
+          <i class="fa-solid fa-code-pull-request"></i><span class="title">API</span>
+        </button>
+        <div class="dev flex-j">
+          <button class="dev-link flex-c" type="submit">
+            <i class="fa-solid fa-code"></i><span class="title">Developer</span>
+          </button>
+          <button class="dev-link flex-c" type="submit">
+            <i class="fas fa-coffee"></i><span class="title">Buy me a nescafe</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+
+</html>
